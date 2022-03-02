@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent implements OnInit {
   title = 'fish-eye';
-  server = 'http://64f5-2a01-cb19-825b-1c00-d84c-3fa0-4d27-a5d7.ngrok.io/api'
+  server = 'http://2408-2a01-cb19-825b-1c00-d84c-3fa0-4d27-a5d7.ngrok.io/api'
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
