@@ -18,13 +18,13 @@ export class LoadScreenComponent implements OnInit {
   }
 
   appendValue(): void{
-    console.log('append value', this.value)
+    // console.log('append value', this.value)
     const interval = setInterval(() => {
       console.log("aaa");
       if(this.value <100){
         this.value += 0.5;
       }else{
-        this.router.navigate(['/accueil']);
+        this.accueilRedirect()
         clearInterval(interval);
       }
     }, 20);
@@ -32,6 +32,10 @@ export class LoadScreenComponent implements OnInit {
 
   cleanValue(): number{
     return Math.floor(this.value);
+  }
+
+  accueilRedirect(): void{
+    this.router.navigate(['/accueil']).then((string) => console.log(string));
   }
 
 }
