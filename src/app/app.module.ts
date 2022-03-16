@@ -6,12 +6,14 @@ import { LoadScreenComponent } from './load-screen/load-screen.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { AccueilComponent } from './accueil/accueil.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoadScreenComponent
+    LoadScreenComponent,
+    AccueilComponent
   ],
   imports: [
     BrowserModule,
