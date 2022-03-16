@@ -1,5 +1,12 @@
-<h1 style="text-align: center;">Beubeu t pd</h1>
-<div class="main-div">
-    <mat-progress-bar mode="determinate" value={{value}}></mat-progress-bar>
-    <span class="main-span"><b>{{cleanValue()}}%</b></span>
+<div class="global-div">
+
+    <div class="main-div">
+        <div class="main-div-content">
+
+            <!-- <span>FISH EYE</span> -->
+            <img id="imageLoadingScreen" src="../../assets/images/loadingScreen/LOGO-HORIZONTAL-BLANC.svg" alt="" srcset="">
+            <mat-progress-bar mode="determinate" id="my-progress-bar" value={{value}}></mat-progress-bar>
+            <span class="main-span"><b>{{cleanValue()}}%</b></span>
+        </div>
+    </div>
 </div>
