@@ -1,0 +1,62 @@
+h1{
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+input{
+    padding: 1%;
+}
+
+.main-div {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 45%;
+    width: 40%;
+    height: 75%;
+    // background-color: rgba(229, 255, 0, 0.356);
+    border-radius: 3%;
+    // filter: blur(3px);
+    // text-shadow: 0 0 8px #000;
+    box-shadow: 0 0 20px whitesmoke;
+    opacity: 0,1;
+  }
+
+.identite{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.entreprise{
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.message{
+    margin-left: 0,9%;
+    margin-top: 1%;
+}
+
+.messageSize{
+    position: absolute;
+    width: 84vh;
+    height: 30vh;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    max-height: 30vh;
+    margin: 3%;
+    margin-top: 2%;
+}
+
+.form-container {
+    float: left;
+    width: 100%;
+  }
+
+button{
+    margin-left: 3%;
+    margin-top: 38%;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
