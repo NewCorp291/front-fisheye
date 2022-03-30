@@ -1,12 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <img id="imageNav" src="../../assets/images/loadingScreen/LOGO-HORIZONTAL-BLANC.png" alt="" srcset="">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav>
+  <div>
+    <!--<img id="imageNav" src="../../assets/images/loadingScreen/LOGO-HORIZONTAL-BLANC.png" alt="" srcset="">-->
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <button class="btn-nav">Billetterie public</button>
-        <button class="btn-nav">Billetterie participant</button>
-      </div>
+      </button> -->
+    <div class="navBar">
+      <img class="accueilLogo" src="../../assets/images/loadingScreen/LOGO-HORIZONTAL-BLANC.svg" alt="" srcset="">
+      <span class="posButton">
+        <button mat-stroked-button><a routerLinkActive="active" routerLink="../devenir-partenaire">Devenir partenaire</a></button>
+        <button mat-stroked-button><a routerLinkActive="active" routerLink="../billeterie">Billetterie participant</a></button>
+      </span>
     </div>
+  </div>
 </nav>

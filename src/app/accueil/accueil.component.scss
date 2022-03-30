@@ -1,0 +1,33 @@
+.navBar {
+    width: 100%;
+    height: 10vh;
+    opacity: 0,1 !important;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.posButton{
+    margin-left: 62%;
+}
+
+button{
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    margin-bottom: 1%;
+    margin-left: 3%;
+    border-style: none;
+    margin-top: 1%;
+    width: 15%;
+    height: 60%;
+}
+
+.accueilLogo{
+    position: fixed;
+    text-align: left !important;
+    width: 15%;
+    margin-top: -4vh;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

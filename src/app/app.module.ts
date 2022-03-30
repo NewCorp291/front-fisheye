@@ -7,22 +7,35 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { AccueilComponent } from './accueil/accueil.component';
+import { BilleterieComponent } from './billeterie/billeterie.component';
+import { DevenirPartenaireComponent } from './devenir-partenaire/devenir-partenaire.component';
+import { RouterModule, Routes } from '@angular/router';
 
+const routes: Routes = [
+  { path: 'load-screen', component: LoadScreenComponent},
+  { path: 'accueil', component: AccueilComponent},
+  { path: 'billeterie', component: BilleterieComponent},
+  { path: 'devenir-partenaire', component: DevenirPartenaireComponent}
+]
 
 @NgModule({
   declarations: [
     AppComponent,
     LoadScreenComponent,
-    AccueilComponent
+    AccueilComponent,
+    BilleterieComponent,
+    DevenirPartenaireComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
     HttpClientModule, 
     BrowserAnimationsModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
