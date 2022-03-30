@@ -10,12 +10,27 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { BilleterieComponent } from './billeterie/billeterie.component';
 import { DevenirPartenaireComponent } from './devenir-partenaire/devenir-partenaire.component';
 import { RouterModule, Routes } from '@angular/router';
+import { MatRadioModule } from '@angular/material/radio';
+import { HeaderComponent } from './header/header.component';
+import { RoutingRadioComponent } from './routing-radio/routing-radio.component';
+import { ConcoursComponent } from './concours/concours.component';
+import { ProgrammationComponent } from './programmation/programmation.component';
+import { MultimediaComponent } from './multimedia/multimedia.component';
+import { EquipeComponent } from './equipe/equipe.component';
+import { PartenaireComponent } from './partenaire/partenaire.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-  { path: 'load-screen', component: LoadScreenComponent},
-  { path: 'accueil', component: AccueilComponent},
-  { path: 'billeterie', component: BilleterieComponent},
-  { path: 'devenir-partenaire', component: DevenirPartenaireComponent}
+  { path: 'load-screen', component: LoadScreenComponent },
+  { path: 'accueil', component: AccueilComponent },
+  { path: 'billeterie', component: BilleterieComponent },
+  { path: 'devenir-partenaire', component: DevenirPartenaireComponent },
+  { path: 'concours', component: ConcoursComponent },
+  { path: 'programmation', component: ProgrammationComponent },
+  { path: 'multimedia', component: MultimediaComponent },
+  { path: 'equipe', component: EquipeComponent },
+  { path: 'partenaire', component: PartenaireComponent },
+  { path: 'contact', component: ContactComponent }
 ]
 
 @NgModule({
@@ -24,15 +39,24 @@ const routes: Routes = [
     LoadScreenComponent,
     AccueilComponent,
     BilleterieComponent,
-    DevenirPartenaireComponent
+    DevenirPartenaireComponent,
+    HeaderComponent,
+    RoutingRadioComponent,
+    ConcoursComponent,
+    ProgrammationComponent,
+    MultimediaComponent,
+    EquipeComponent,
+    PartenaireComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
-    HttpClientModule, 
+    AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatProgressBarModule,
     RouterModule.forRoot(routes),
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
