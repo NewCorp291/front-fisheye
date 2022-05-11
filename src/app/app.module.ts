@@ -19,6 +19,7 @@ import { MultimediaComponent } from './multimedia/multimedia.component';
 import { EquipeComponent } from './equipe/equipe.component';
 import { PartenaireComponent } from './partenaire/partenaire.component';
 import { ContactComponent } from './contact/contact.component';
+import {MatCardModule} from '@angular/material/card';
 
 const routes: Routes = [
   { path: 'load-screen', component: LoadScreenComponent },
@@ -56,7 +57,8 @@ const routes: Routes = [
     BrowserAnimationsModule,
     MatProgressBarModule,
     RouterModule.forRoot(routes),
-    MatRadioModule
+    MatRadioModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
